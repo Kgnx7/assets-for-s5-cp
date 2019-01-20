@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>simple web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Предикаты</h1>
+      <ul class="list-group list-group-flush mt-3">
+        <li class="list-group-item">
+            <h3>Задача о четырех цветах (рассматриваются страны евросоюза)</h3>
+            <a href="./fourColors">Решение</a>
+          </li>
+        <li class="list-group-item">
+            <h3>Задача о Ханойской башне</h3>
+            <form id="tower" action="/tower" method="get">
+                <label for="number_of_tower">Кол-во колец</label>
+                <select class="form-control" id="number_of_tower" name="number_of_tower">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <button type="submit" class="btn btn-link">Решение</button>
+              </form>
+        </li>
+        <li class="list-group-item">
+            <h3>Задача о восьми ферзях</h3>
+            <form id="queens" action="/queens" method="get">
+                <label for="number_of_queens">Кол-во ферзей на шахматной доске</label>
+                <select class="form-control" id="number_of_queens" name="number_of_queens">
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+                <button type="submit" class="btn btn-link">Решение</button>
+              </form>
+        </li>
+        <li class="list-group-item">
+            <h3>Задача о рыцарях и мошенниках</h3>
+            <form id="knights" action="/knights" method="get">
+                <label for="knights">
+                  <h4>Сценарии:</h4>
+                  <ol>
+                    <li>Вы встретили 2 горожан. 1 сказал: "Либо я мошенник, либо второй - рыцарь.".</li>
+                    <li>Вы встретили 2 горожан. 1 сказал: "Я мошенник, но второй нет".</li>
+                    <li>Вы встретили 2 горожан. 1 сказал: "Один из нас мошенник".</li>
+                    <li>Вы встретили 3 горожан. 1 сказал: "Мы мошенники", 2 сказал: "Один из нас рыцарь".</li>
+                    <li>Вы встретили 3 горожан. 1 сказал: "Второй мошенник", 2 сказал: "1 и 3 похоже друг на друга".</li>
+                  </ol>
+                </label>
+                <select class="form-control" id="knights" name="scenario">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <button type="submit" class="btn btn-link">Решение</button>
+              </form>
+        </li>
+      </ul>
+    </div>  
+  </body>
+</html>
